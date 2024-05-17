@@ -18,8 +18,8 @@
 #include <BlynkSimpleEsp32.h>
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "PTIT.HCM_SV";
-char pass[] = "";
+char ssid[] = "Lag vc";
+char pass[] = "123456789";
 DHT dht(DHTPIN, DHTTYPE);
 int LED = 32;            /*LED pin defined*/
 int GasSensorInput = A0;
