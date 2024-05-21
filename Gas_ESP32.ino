@@ -5,12 +5,13 @@
 #include "tensorflow/lite/micro/system_setup.h"
 #include "tensorflow/lite/schema/schema_generated.h"
 #include "Model_data_gas.h" // Tệp header chứa mô hình TFLite
+
 #include <DHT.h>
 #include <LiquidCrystal_I2C.h>
 #include <WiFi.h>
 
 #define DHTPIN 5   
-#define DHTTYPE DHT11 
+#define DHTTYPE DHT11   
 #define BLYNK_TEMPLATE_ID "TMPL6fHefmlSI"
 #define BLYNK_TEMPLATE_NAME "Gas Warning"
 #define BLYNK_AUTH_TOKEN "oIIBRmMKT8s7EQlsSIckVAnyGt0k0SPs"
@@ -18,7 +19,7 @@
 #include <BlynkSimpleEsp32.h>
 
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "Lag vc";
+char ssid[] = "Yamaha";
 char pass[] = "123456789";
 DHT dht(DHTPIN, DHTTYPE);
 int LED = 32;            /*LED pin defined*/
